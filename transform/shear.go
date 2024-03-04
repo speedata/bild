@@ -4,8 +4,8 @@ import (
 	"image"
 	"math"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/parallel"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/parallel"
 )
 
 // ShearH applies a shear linear transformation along the horizontal axis,

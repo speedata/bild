@@ -4,7 +4,7 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/anthonynsimon/bild/math/f64"
+	"github.com/speedata/bild/math/f64"
 )
 
 // RGBToHSL converts from  RGB to HSL color model.

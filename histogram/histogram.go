@@ -4,7 +4,7 @@ package histogram
 import (
 	"image"
 
-	"github.com/anthonynsimon/bild/clone"
+	"github.com/speedata/bild/clone"
 )
 
 // RGBAHistogram holds a sub-histogram per RGBA channel.

@@ -4,7 +4,7 @@ import (
 	"image"
 	"testing"
 
-	"github.com/anthonynsimon/bild/util"
+	"github.com/speedata/bild/util"
 )
 
 func TestBoxBlur(t *testing.T) {

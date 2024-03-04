@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"image"
 
-	"github.com/anthonynsimon/bild/blend"
+	"github.com/speedata/bild/blend"
 	"github.com/spf13/cobra"
 )
 

@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/anthonynsimon/bild/imgio"
+	"github.com/speedata/bild/imgio"
 )
 
 var jpgExtensions = []string{".jpg", ".jpeg"}

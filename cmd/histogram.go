@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"image"
 
-	"github.com/anthonynsimon/bild/channel"
-	"github.com/anthonynsimon/bild/histogram"
+	"github.com/speedata/bild/channel"
+	"github.com/speedata/bild/histogram"
 	"github.com/spf13/cobra"
 )
 

@@ -1,7 +1,7 @@
 /*Package fcolor provides a basic RGBAF64 color type.*/
 package fcolor
 
-import "github.com/anthonynsimon/bild/math/f64"
+import "github.com/speedata/bild/math/f64"
 
 // RGBAF64 represents an RGBA color using the range 0.0 to 1.0 with a float64 for each channel.
 type RGBAF64 struct {

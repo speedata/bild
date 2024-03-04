@@ -6,14 +6,14 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/anthonynsimon/bild/adjust"
-	"github.com/anthonynsimon/bild/blend"
-	"github.com/anthonynsimon/bild/blur"
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/convolution"
-	"github.com/anthonynsimon/bild/math/f64"
-	"github.com/anthonynsimon/bild/parallel"
-	"github.com/anthonynsimon/bild/util"
+	"github.com/speedata/bild/adjust"
+	"github.com/speedata/bild/blend"
+	"github.com/speedata/bild/blur"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/convolution"
+	"github.com/speedata/bild/math/f64"
+	"github.com/speedata/bild/parallel"
+	"github.com/speedata/bild/util"
 )
 
 // Invert returns a negated version of the image.

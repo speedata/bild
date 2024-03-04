@@ -4,7 +4,7 @@ import (
 	"image"
 	"testing"
 
-	"github.com/anthonynsimon/bild/histogram"
+	"github.com/speedata/bild/histogram"
 )
 
 // benchResult is used to avoid having the compiler optimize the benchmark code calls

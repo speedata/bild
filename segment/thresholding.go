@@ -5,8 +5,8 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/util"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/util"
 )
 
 // Threshold returns a grayscale image in which values from the param img that are

@@ -1,4 +1,4 @@
-module github.com/anthonynsimon/bild
+module github.com/speedata/bild
 
 go 1.12
 

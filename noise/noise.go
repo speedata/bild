@@ -6,8 +6,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/anthonynsimon/bild/parallel"
-	"github.com/anthonynsimon/bild/perlin"
+	"github.com/speedata/bild/parallel"
+	"github.com/speedata/bild/perlin"
 )
 
 // Fn is a noise function that generates values between 0 and 255.

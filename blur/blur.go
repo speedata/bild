@@ -5,8 +5,8 @@ import (
 	"image"
 	"math"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/convolution"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/convolution"
 )
 
 // Box returns a blurred (average) version of the image.

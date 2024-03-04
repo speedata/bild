@@ -5,8 +5,8 @@ import (
 	"image/color"
 	"testing"
 
-	"github.com/anthonynsimon/bild/math/f64"
-	"github.com/anthonynsimon/bild/util"
+	"github.com/speedata/bild/math/f64"
+	"github.com/speedata/bild/util"
 )
 
 func TestApply(t *testing.T) {

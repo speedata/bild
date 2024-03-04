@@ -4,8 +4,8 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/parallel"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/parallel"
 )
 
 // Apply returns a copy of the provided image after applying the provided color function to each pixel.

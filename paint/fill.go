@@ -6,8 +6,8 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/util"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/util"
 )
 
 type fillPoint struct {

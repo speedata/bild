@@ -1,6 +1,6 @@
 package main
 
-import "github.com/anthonynsimon/bild/cmd"
+import "github.com/speedata/bild/cmd"
 
 func main() {
 	cmd.Execute()

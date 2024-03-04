@@ -3,7 +3,7 @@ package cmd
 import (
 	"image"
 
-	"github.com/anthonynsimon/bild/segment"
+	"github.com/speedata/bild/segment"
 	"github.com/spf13/cobra"
 )
 

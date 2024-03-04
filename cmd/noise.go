@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/anthonynsimon/bild/imgio"
-	"github.com/anthonynsimon/bild/noise"
+	"github.com/speedata/bild/imgio"
+	"github.com/speedata/bild/noise"
 	"github.com/spf13/cobra"
 )
 

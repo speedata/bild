@@ -5,10 +5,10 @@ import (
 	"image"
 	"math"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/fcolor"
-	"github.com/anthonynsimon/bild/math/f64"
-	"github.com/anthonynsimon/bild/parallel"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/fcolor"
+	"github.com/speedata/bild/math/f64"
+	"github.com/speedata/bild/parallel"
 )
 
 // Normal combines the foreground and background images by placing the foreground over the

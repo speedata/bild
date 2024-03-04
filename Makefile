@@ -1,4 +1,4 @@
-PKG = github.com/anthonynsimon/bild
+PKG = github.com/speedata/bild
 VERSION ?= dev
 LDFLAGS = -ldflags "-X $(PKG)/cmd.Version=$(VERSION) -extldflags \"-static\""
 MAC_LDFLAGS = -ldflags "-X $(PKG)/cmd.Version=$(VERSION)"

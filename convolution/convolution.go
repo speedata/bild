@@ -5,8 +5,8 @@ import (
 	"image"
 	"math"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/parallel"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/parallel"
 )
 
 // Options are the Convolve function parameters.
@@ -23,8 +23,7 @@ type Options struct {
 //
 // Usage example:
 //
-//		result := Convolve(img, kernel, &Options{Bias: 0, Wrap: false})
-//
+//	result := Convolve(img, kernel, &Options{Bias: 0, Wrap: false})
 func Convolve(img image.Image, k Matrix, o *Options) *image.RGBA {
 	// Config the convolution
 	bias := 0.0

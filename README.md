@@ -1,10 +1,12 @@
 # bild
 
-![bild logo](assets/img/logo.png)  
+![bild logo](assets/img/logo.png)
 
-[![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/anthonynsimon/bild/blob/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/anthonynsimon/bild?status.svg)](https://godoc.org/github.com/anthonynsimon/bild)
-[![Go Report Card](https://goreportcard.com/badge/github.com/anthonynsimon/bild)](https://goreportcard.com/report/github.com/anthonynsimon/bild)
+[![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/speedata/bild/blob/master/LICENSE)
+[![GoDoc](https://godoc.org/github.com/speedata/bild?status.svg)](https://godoc.org/github.com/speedata/bild)
+[![Go Report Card](https://goreportcard.com/badge/github.com/speedata/bild)](https://goreportcard.com/report/github.com/speedata/bild)
+
+**All credits goes to the original repository at https://github.com/anthonynsimon/bild.**
 
 A collection of parallel image processing algorithms in pure Go.
 
@@ -13,19 +15,19 @@ The aim of this project is simplicity in use and development over absolute high 
 It uses packages from the standard library whenever possible to reduce dependency use and development abstractions.
 
 All operations return image types from the standard library.
- 
+
 ## Documentation
-The documentation for the various packages is available [here](https://pkg.go.dev/mod/github.com/anthonynsimon/bild?tab=packages).
+The documentation for the various packages is available [here](https://pkg.go.dev/mod/github.com/speedata/bild?tab=packages).
 
 
 ## CLI usage
 
 Download and compile from sources:
 ```
-go get github.com/anthonynsimon/bild
+go get github.com/speedata/bild
 ```
 
-Or get the pre-compiled binaries for your platform on the [releases page](https://github.com/anthonynsimon/bild/releases)
+Or get the pre-compiled binaries for your platform on the [releases page](https://github.com/speedata/bild/releases)
 
 
 ```
@@ -66,7 +68,7 @@ bild effect median --radius 1.5 input.png output.png
 bild requires Go version 1.11 or greater.
 
 ```bash
-go get github.com/anthonynsimon/bild/...
+go get github.com/speedata/bild/...
 ```
 
 ## Basic package usage example:
@@ -74,9 +76,9 @@ go get github.com/anthonynsimon/bild/...
 package main
 
 import (
-    "github.com/anthonynsimon/bild/effect"
-    "github.com/anthonynsimon/bild/imgio"
-    "github.com/anthonynsimon/bild/transform"
+    "github.com/speedata/bild/effect"
+    "github.com/speedata/bild/imgio"
+    "github.com/speedata/bild/transform"
 )
 
 func main() {
@@ -99,39 +101,39 @@ func main() {
 
 # Output examples
 ## Adjustment
-    import "github.com/anthonynsimon/bild/adjust"
+    import "github.com/speedata/bild/adjust"
 
 ### Brightness
     result := adjust.Brightness(img, 0.25)
 
-![example](assets/img/brightness.jpg)  
+![example](assets/img/brightness.jpg)
 
 ### Contrast
     result := adjust.Contrast(img, -0.5)
 
-![example](assets/img/contrast.jpg)  
+![example](assets/img/contrast.jpg)
 
 ### Gamma
     result := adjust.Gamma(img, 2.2)
 
-![example](assets/img/gamma.jpg)  
+![example](assets/img/gamma.jpg)
 
 
 ### Hue
     result := adjust.Hue(img, -42)
 
-![example](assets/img/hue.jpg)  
+![example](assets/img/hue.jpg)
 
 ### Saturation
     result := adjust.Saturation(img, 0.5)
 
-![example](assets/img/saturation.jpg)  
+![example](assets/img/saturation.jpg)
 
 
 
 ## Blend modes
-    import "github.com/anthonynsimon/bild/blend"
-
+    import "github.com/speedata/bild/blend"
+    
     result := blend.Multiply(bg, fg)
 
 | Add | Color Burn | Color Dodge |
@@ -150,23 +152,23 @@ func main() {
 
 
 ## Blur
-    import "github.com/anthonynsimon/bild/blur"
+    import "github.com/speedata/bild/blur"
 
 ### Box Blur
     result := blur.Box(img, 3.0)
 
-![example](assets/img/boxblur.jpg)  
+![example](assets/img/boxblur.jpg)
 
 
 ### Gaussian Blur
     result := blur.Gaussian(img, 3.0)
 
 
-![example](assets/img/gaussianblur.jpg)  
+![example](assets/img/gaussianblur.jpg)
 
 
 ## Channel
-    import "github.com/anthonynsimon/bild/channel"
+    import "github.com/speedata/bild/channel"
 
 ### Extract Channels
     result := channel.Extract(img, channel.Alpha)
@@ -177,110 +179,110 @@ func main() {
     result := channel.ExtractMultiple(img, channel.Red, channel.Alpha)
 
 ## Effect
-    import "github.com/anthonynsimon/bild/effect"
+    import "github.com/speedata/bild/effect"
 
 ### Dilate
     result := effect.Dilate(img, 3)
 
-![example](assets/img/dilate.jpg)     
+![example](assets/img/dilate.jpg)
 
 ### Edge Detection
     result := effect.EdgeDetection(img, 1.0)
 
-![example](assets/img/edgedetection.jpg)  
+![example](assets/img/edgedetection.jpg)
 
 ### Emboss
     result := effect.Emboss(img)
 
-![example](assets/img/emboss.jpg)  
+![example](assets/img/emboss.jpg)
 
 ### Erode
     result := effect.Erode(img, 3)
 
-![example](assets/img/erode.jpg)   
+![example](assets/img/erode.jpg)
 
 ### Grayscale
     result := effect.Grayscale(img)
 
-![example](assets/img/grayscale.jpg)  
+![example](assets/img/grayscale.jpg)
 
 ### Invert
     result := effect.Invert(img)
 
-![example](assets/img/invert.jpg)  
+![example](assets/img/invert.jpg)
 
 ### Median
     result := effect.Median(img, 10.0)
 
-![example](assets/img/median.jpg)  
+![example](assets/img/median.jpg)
 
 ### Sepia
     result := effect.Sepia(img)
 
-![example](assets/img/sepia.jpg)  
+![example](assets/img/sepia.jpg)
 
 ### Sharpen
     result := effect.Sharpen(img)
 
-![example](assets/img/sharpen.jpg)  
+![example](assets/img/sharpen.jpg)
 
 ### Sobel
     result := effect.Sobel(img)
 
-![example](assets/img/sobel.jpg)  
+![example](assets/img/sobel.jpg)
 
 ### Unsharp Mask
     result := effect.UnsharpMask(img, 0.6, 1.2)
 
-![example](assets/img/unsharpmask.jpg)  
+![example](assets/img/unsharpmask.jpg)
 
 
 ## Histogram
-    import "github.com/anthonynsimon/bild/histogram"
+    import "github.com/speedata/bild/histogram"
 
 ### RGBA Histogram
     hist := histogram.NewRGBAHistogram(img)
     result := hist.Image()
 
-![example](assets/img/histogram.png)  
+![example](assets/img/histogram.png)
 
 
 ## Noise
-    import "github.com/anthonynsimon/bild/noise"
+    import "github.com/speedata/bild/noise"
 
 ### Uniform colored
     result := noise.Generate(280, 280, &noise.Options{Monochrome: false, NoiseFn: noise.Uniform})
 
-![example](assets/img/noiseuniform.jpg)  
+![example](assets/img/noiseuniform.jpg)
 
 
 ### Binary monochrome
     result := noise.Generate(280, 280, &noise.Options{Monochrome: true, NoiseFn: noise.Binary})
 
-![example](assets/img/noisebinary.jpg)  
+![example](assets/img/noisebinary.jpg)
 
 
 ### Gaussian monochrome
     result := noise.Generate(280, 280, &noise.Options{Monochrome: true, NoiseFn: noise.Gaussian})
 
-![example](assets/img/noisegaussian.jpg)  
+![example](assets/img/noisegaussian.jpg)
 
-### Perlin Noise 
+### Perlin Noise
     result := noise.GeneratePerlin(280, 280, 0.25)
-![example](assets/img/perlin.jpg)  
+![example](assets/img/perlin.jpg)
 
 ## Paint
-    import "github.com/anthonynsimon/bild/paint"
+    import "github.com/speedata/bild/paint"
 
 ### Flood Fill
     // Fuzz is the percentage of maximum color distance that is tolerated
     result := paint.FloodFill(img, image.Point{240, 0}, color.RGBA{255, 0, 0, 255}, 15)
 
-![example](assets/img/floodfill.jpg) 
+![example](assets/img/floodfill.jpg)
 
 
 ## Segmentation
-    import "github.com/anthonynsimon/bild/segment"
+    import "github.com/speedata/bild/segment"
 
 ### Threshold
     result := segment.Threshold(img, 128)
@@ -289,7 +291,7 @@ func main() {
 
 
 ## Transform
-    import "github.com/anthonynsimon/bild/transform"
+    import "github.com/speedata/bild/transform"
 
 ### Crop
     // Source image is 280x280
@@ -300,12 +302,12 @@ func main() {
 ### FlipH
     result := transform.FlipH(img)
 
-![example](assets/img/fliph.jpg)  
+![example](assets/img/fliph.jpg)
 
 ### FlipV
     result := transform.FlipV(img)
 
-![example](assets/img/flipv.jpg) 
+![example](assets/img/flipv.jpg)
 
 
 ### Resize Resampling Filters
@@ -338,22 +340,22 @@ func main() {
 ### Shear Horizontal
     result := transform.ShearH(img, 30)
 
-![example](assets/img/shearh.jpg)  
+![example](assets/img/shearh.jpg)
 
 ### Shear Vertical
     result := transform.ShearV(img, 30)
 
-![example](assets/img/shearv.jpg) 
+![example](assets/img/shearv.jpg)
 
 ### Translate
     result := transform.Translate(img, 80, 0)
 
-![example](assets/img/translate.jpg) 
+![example](assets/img/translate.jpg)
 
 
 ## Contribute
 
-Want to hack on the project? Any kind of contribution is welcome!  
+Want to hack on the project? Any kind of contribution is welcome!
 Simply follow the next steps:
 
 - Fork the project.
@@ -362,7 +364,7 @@ Simply follow the next steps:
 - Commit your changes to the new branch.
 - Send a pull request, it will be reviewed shortly.
 
-In case you want to add a feature, please create a new issue and briefly explain what the feature would consist of. 
+In case you want to add a feature, please create a new issue and briefly explain what the feature would consist of.
 For bugs or requests, before creating an issue please check if one has already been created for it.
 
 

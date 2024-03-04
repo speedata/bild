@@ -3,8 +3,8 @@ package transform
 import (
 	"image"
 
-	"github.com/anthonynsimon/bild/clone"
-	"github.com/anthonynsimon/bild/parallel"
+	"github.com/speedata/bild/clone"
+	"github.com/speedata/bild/parallel"
 )
 
 // Translate repositions a copy of the provided image by dx on the x-axis and

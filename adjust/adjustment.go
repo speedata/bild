@@ -6,8 +6,8 @@ import (
 	"image/color"
 	"math"
 
-	"github.com/anthonynsimon/bild/math/f64"
-	"github.com/anthonynsimon/bild/util"
+	"github.com/speedata/bild/math/f64"
+	"github.com/speedata/bild/util"
 )
 
 // Brightness returns a copy of the image with the adjusted brightness.
