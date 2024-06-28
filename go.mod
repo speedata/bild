@@ -3,8 +3,8 @@ module github.com/speedata/bild
 go 1.21
 
 require (
-	github.com/spf13/cobra v1.8.0
-	golang.org/x/image v0.15.0
+	github.com/spf13/cobra v1.8.1
+	golang.org/x/image v0.18.0
 )
 
 require (
